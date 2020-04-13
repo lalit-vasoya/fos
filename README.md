@@ -128,6 +128,7 @@ Table Name
  - id
  - user      
  - food           [OneToOneField with food]
+ - restaurant     [OneToOne with restaurant]
  - qunatity       [Quantity of user want to buy]
  - price          
 
