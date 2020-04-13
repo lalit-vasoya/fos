@@ -15,8 +15,6 @@ Table Name
 - Order         [Order]
 - Orderitem     [OrderItem]
 
-+--------------------------------------+
-
 +----------------------------------------------+
 
 **No of Django Concept use in this system**
@@ -38,8 +36,6 @@ Table Name
  - AJAX                  [for send request on perticuler events occured]
  - CSS                   [Some Basic design]    
  - Bootstrap4            [Use advance Models, cart, Alert etc design ]
-+-----------------------------------------------------------------------+
-
 
 +-----------------------------------------------------------------------+
 
@@ -66,10 +62,17 @@ Table Name
    
 +----------------------+
 
+2. **City**
 
 +----------------------+
 
-2. **Profile**
+   - id
+   - name
+   - description
+   
++----------------------+
+
+3. **Profile**
 
 +----------------------+
 
@@ -77,13 +80,11 @@ Table Name
    - user          [OneToOne with User]
    - address 
    - contact
-   - city 
-   
+   - city          [OneToOne with City]
+  
 +----------------------+
 
-+----------------------+
-
-3. **Restaurant**
+4. **Restaurant**
 
 +----------------------+
 
@@ -92,26 +93,22 @@ Table Name
    - name
    - address 
    - contact
-   - city 
+   - city          [OneToOne with City]
    - open
-   
-+----------------------+
 
 +----------------------+
 
-4. **Category**
+5. **Category**
 
 +----------------------+
 
  - id
  - name
  - description
- 
-+----------------------+
 
 +----------------------+
 
-5. **Food**
+6. **Food**
 
 +----------------------+
 
@@ -121,12 +118,10 @@ Table Name
  - qunatity
  - price  
  - description
- 
-+----------------------+
 
 +----------------------+
 
-6. **Cart**
+7. **Cart**
 
 +----------------------+
 
@@ -135,12 +130,10 @@ Table Name
  - food           [OneToOneField with food]
  - qunatity       [Quantity of user want to buy]
  - price          
-+----------------------+
-
 
 +----------------------+
 
-7. **Order**
+8. **Order**
 
 +----------------------+
 
@@ -149,12 +142,10 @@ Table Name
  - restaurant     [OneToOne with restaurant]
  - date           [Date  and time of order]
  - total_price 
- 
-+----------------------+
 
 +----------------------+
 
-8. **Orderitem**
+9. **Orderitem**
 
 +----------------------+
 
